@@ -1,0 +1,145 @@
+Thu Dec  5 00:08:57 EET 2024: Installation started
+Thu Dec  5 00:08:57 EET 2024: Original user is root
+Thu Dec  5 00:08:57 EET 2024: Arch Linux detected. Installation proceeding.
+Thu Dec  5 00:09:01 EET 2024: Operation accepted by user.
+Thu Dec  5 00:09:01 EET 2024: Installation started for prerequisites section
+Thu Dec  5 00:09:01 EET 2024: Attempting to run: Update package database and upgrade packages (Recommended)
+Thu Dec  5 00:09:06 EET 2024: Operation accepted by user.
+Thu Dec  5 00:09:07 EET 2024: Update package database and upgrade packages (Recommended) completed successfully.
+Thu Dec  5 00:09:07 EET 2024: Attempting to run: Install YAY (Must)/Breaks the script
+Thu Dec  5 00:09:12 EET 2024: Operation accepted by user.
+Thu Dec  5 00:09:12 EET 2024: Install YAY (Must)/Breaks the script completed successfully.
+Thu Dec  5 00:09:12 EET 2024: Attempting to run: Clone YAY (Must)/Breaks the script
+Thu Dec  5 00:09:13 EET 2024: Clone YAY (Must)/Breaks the script completed successfully.
+Thu Dec  5 00:09:13 EET 2024: Attempting to run: Build YAY (Must)/Breaks the script
+Thu Dec  5 00:09:13 EET 2024: Command failed: makepkg --noconfirm -si && cd .. # builds with makepkg
+Thu Dec  5 00:09:13 EET 2024: Build YAY (Must)/Breaks the script failed and was not retried (auto mode).
+Thu Dec  5 00:09:13 EET 2024: Attempting to run: Configuring audio (Recommended)
+Thu Dec  5 00:09:18 EET 2024: Script interrupted and exited
+Thu Dec  5 12:28:39 AM EET 2024: Installation started
+Thu Dec  5 12:28:39 AM EET 2024: Original user is yurii
+Thu Dec  5 12:28:39 AM EET 2024: Arch Linux detected. Installation proceeding.
+Thu Dec  5 12:28:40 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:28:40 AM EET 2024: Installation started for prerequisites section
+Thu Dec  5 12:28:40 AM EET 2024: Attempting to run: Update package database and upgrade packages (Recommended)
+Thu Dec  5 12:28:42 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:28:44 AM EET 2024: Update package database and upgrade packages (Recommended) completed successfully.
+Thu Dec  5 12:28:44 AM EET 2024: Attempting to run: Install YAY (Must)/Breaks the script
+Thu Dec  5 12:28:52 AM EET 2024: Operation cancelled by user.
+Thu Dec  5 12:28:52 AM EET 2024: Install YAY (Must)/Breaks the script was skipped by user choice.
+Thu Dec  5 12:28:52 AM EET 2024: Attempting to run: Configuring audio (Recommended)
+Thu Dec  5 12:28:55 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:28:56 AM EET 2024: Configuring audio (Recommended) completed successfully.
+Thu Dec  5 12:28:56 AM EET 2024: Attempting to run: Installing Nerd Fonts and Symbols (Recommended)
+Thu Dec  5 12:29:10 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:29:33 AM EET 2024: Installing Nerd Fonts and Symbols (Recommended) completed successfully.
+Thu Dec  5 12:29:33 AM EET 2024: Attempting to run: Install and enable SDDM (Recommended)
+Thu Dec  5 12:29:36 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:29:49 AM EET 2024: Install and enable SDDM (Recommended) completed successfully.
+Thu Dec  5 12:29:49 AM EET 2024: Attempting to run: Install Brave Browser
+Thu Dec  5 12:29:56 AM EET 2024: Operation cancelled by user.
+Thu Dec  5 12:29:56 AM EET 2024: Install Brave Browser was skipped by user choice.
+Thu Dec  5 12:29:56 AM EET 2024: Attempting to run: Install Kitty (Recommended)
+Thu Dec  5 12:30:00 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:30:06 AM EET 2024: Install Kitty (Recommended) completed successfully.
+Thu Dec  5 12:30:06 AM EET 2024: Attempting to run: Install nano
+Thu Dec  5 12:30:10 AM EET 2024: Operation cancelled by user.
+Thu Dec  5 12:30:10 AM EET 2024: Install nano was skipped by user choice.
+Thu Dec  5 12:30:10 AM EET 2024: Attempting to run: Install tar for extracting files (Must)/needed for copying themes
+Thu Dec  5 12:30:12 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:30:13 AM EET 2024: Install tar for extracting files (Must)/needed for copying themes completed successfully.
+Thu Dec  5 12:30:17 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:30:17 AM EET 2024: Installation started for hypr section
+Thu Dec  5 12:30:17 AM EET 2024: Attempting to run: Install Hyprland (Must)
+Thu Dec  5 12:30:18 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:30:34 AM EET 2024: Install Hyprland (Must) completed successfully.
+Thu Dec  5 12:30:34 AM EET 2024: Attempting to run: Copy hyprland config (Must)
+Thu Dec  5 12:30:37 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:30:38 AM EET 2024: Copy hyprland config (Must) completed successfully.
+Thu Dec  5 12:30:38 AM EET 2024: Attempting to run: Install XDG desktop portal for Hyprland
+Thu Dec  5 12:30:41 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:30:45 AM EET 2024: Install XDG desktop portal for Hyprland completed successfully.
+Thu Dec  5 12:30:45 AM EET 2024: Attempting to run: Install KDE Polkit agent for authentication dialogs
+Thu Dec  5 12:30:47 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:30:49 AM EET 2024: Install KDE Polkit agent for authentication dialogs completed successfully.
+Thu Dec  5 12:30:49 AM EET 2024: Attempting to run: Install Dunst notification daemon
+Thu Dec  5 12:30:51 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:30:52 AM EET 2024: Install Dunst notification daemon completed successfully.
+Thu Dec  5 12:30:52 AM EET 2024: Attempting to run: Copy dunst config
+Thu Dec  5 12:30:56 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:30:56 AM EET 2024: Copy dunst config completed successfully.
+Thu Dec  5 12:30:56 AM EET 2024: Attempting to run: Install QT support on wayland
+Thu Dec  5 12:30:58 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:31:06 AM EET 2024: Install QT support on wayland completed successfully.
+Thu Dec  5 12:31:11 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:31:11 AM EET 2024: Installation started for utilities section
+Thu Dec  5 12:31:11 AM EET 2024: Attempting to run: Install Waybar - Status Bar
+Thu Dec  5 12:31:13 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:31:20 AM EET 2024: Install Waybar - Status Bar completed successfully.
+Thu Dec  5 12:31:20 AM EET 2024: Attempting to run: Copy Waybar config
+Thu Dec  5 12:31:23 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:31:23 AM EET 2024: Copy Waybar config completed successfully.
+Thu Dec  5 12:31:23 AM EET 2024: Attempting to run: Install Tofi - Application Launcher
+Thu Dec  5 12:31:28 AM EET 2024: Operation cancelled by user.
+Thu Dec  5 12:31:28 AM EET 2024: Install Tofi - Application Launcher was skipped by user choice.
+Thu Dec  5 12:31:28 AM EET 2024: Attempting to run: Copy Tofi config(s)
+Thu Dec  5 12:31:35 AM EET 2024: Operation cancelled by user.
+Thu Dec  5 12:31:35 AM EET 2024: Copy Tofi config(s) was skipped by user choice.
+Thu Dec  5 12:31:35 AM EET 2024: Attempting to run: Install Cliphist - Clipboard Manager
+Thu Dec  5 12:31:36 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:31:37 AM EET 2024: Install Cliphist - Clipboard Manager completed successfully.
+Thu Dec  5 12:31:37 AM EET 2024: Attempting to run: Install SWWW for wallpaper management
+Thu Dec  5 12:31:40 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:31:44 AM EET 2024: Install SWWW for wallpaper management completed successfully.
+Thu Dec  5 12:31:44 AM EET 2024: Attempting to run: Copy sample wallpapers to assets directory (Recommended)
+Thu Dec  5 12:31:47 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:31:47 AM EET 2024: Copy sample wallpapers to assets directory (Recommended) completed successfully.
+Thu Dec  5 12:31:47 AM EET 2024: Attempting to run: Install Hyprpicker - Color Picker
+Thu Dec  5 12:31:52 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:32:01 AM EET 2024: Command failed: yay -S --sudoloop --noconfirm hyprpicker
+Thu Dec  5 12:32:08 AM EET 2024: Operation cancelled by user.
+Thu Dec  5 12:32:08 AM EET 2024: Install Hyprpicker - Color Picker was not completed due to failure and user chose not to retry.
+Thu Dec  5 12:32:08 AM EET 2024: Attempting to run: Install Hyprlock - Screen Locker (Must)
+Thu Dec  5 12:32:18 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:32:22 AM EET 2024: Install Hyprlock - Screen Locker (Must) completed successfully.
+Thu Dec  5 12:32:22 AM EET 2024: Attempting to run: Copy Hyprlock config
+Thu Dec  5 12:32:27 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:32:27 AM EET 2024: Copy Hyprlock config completed successfully.
+Thu Dec  5 12:32:27 AM EET 2024: Attempting to run: Install Wlogout - Session Manager
+Thu Dec  5 12:32:29 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:32:54 AM EET 2024: Install Wlogout - Session Manager completed successfully.
+Thu Dec  5 12:32:54 AM EET 2024: Attempting to run: Copy Wlogout config and assets
+Thu Dec  5 12:32:57 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:32:57 AM EET 2024: Copy Wlogout config and assets completed successfully.
+Thu Dec  5 12:32:57 AM EET 2024: Attempting to run: Install Grimblast - Screenshot tool
+Thu Dec  5 12:32:58 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:33:10 AM EET 2024: Install Grimblast - Screenshot tool completed successfully.
+Thu Dec  5 12:33:10 AM EET 2024: Attempting to run: Install Hypridle for idle management (Must)
+Thu Dec  5 12:33:14 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:33:18 AM EET 2024: Install Hypridle for idle management (Must) completed successfully.
+Thu Dec  5 12:33:18 AM EET 2024: Attempting to run: Copy Hypridle config
+Thu Dec  5 12:33:29 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:33:29 AM EET 2024: Copy Hypridle config completed successfully.
+Thu Dec  5 12:33:34 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:33:34 AM EET 2024: Installation started for theming section
+Thu Dec  5 12:33:34 AM EET 2024: Attempting to run: Install nwg-look for GTK theme management
+Thu Dec  5 12:33:39 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:33:40 AM EET 2024: Install nwg-look for GTK theme management completed successfully.
+Thu Dec  5 12:33:40 AM EET 2024: Attempting to run: Install Qt5, Qt6 Settings, and Kvantum theme engines
+Thu Dec  5 12:33:42 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:33:43 AM EET 2024: Install Qt5, Qt6 Settings, and Kvantum theme engines completed successfully.
+Thu Dec  5 12:33:43 AM EET 2024: Attempting to run: Install Catppuccin Mocha GTK theme
+Thu Dec  5 12:33:46 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:33:46 AM EET 2024: Install Catppuccin Mocha GTK theme completed successfully.
+Thu Dec  5 12:33:46 AM EET 2024: Attempting to run: Install Tela Circle Dracula icon theme
+Thu Dec  5 12:33:50 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:33:57 AM EET 2024: Install Tela Circle Dracula icon theme completed successfully.
+Thu Dec  5 12:33:57 AM EET 2024: Attempting to run: Install Catppuccin theme for Kvantum
+Thu Dec  5 12:34:01 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:34:12 AM EET 2024: Install Catppuccin theme for Kvantum completed successfully.
+Thu Dec  5 12:34:12 AM EET 2024: Attempting to run: Copy Catppuccin theme configuration for Kitty terminal
+Thu Dec  5 12:34:15 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:34:15 AM EET 2024: Copy Catppuccin theme configuration for Kitty terminal completed successfully.
+Thu Dec  5 12:34:17 AM EET 2024: Operation accepted by user.
+Thu Dec  5 12:34:17 AM EET 2024: Final setup script started
+Thu Dec  5 12:34:17 AM EET 2024: Installation completed successfully
