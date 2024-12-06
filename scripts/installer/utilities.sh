@@ -12,7 +12,7 @@ print_info "\nStarting utilities setup..."
 run_command "pacman -S --noconfirm waybar" "Install Waybar - Status Bar" "yes"
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/waybar /home/$SUDO_USER/.config/" "Link Waybar config" "yes" "no"
 
-run_command "pacman -S --noconfirm wofi" "Install Wofi - Application Launcher" "yes" "no"
+run_command "pacman -S --noconfirm wofi" "Install Wofi - Application Launcher" "yes"
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/wofi /home/$SUDO_USER/.config/" "Link Tofi config(s)" "yes" "no"
 
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
@@ -31,5 +31,5 @@ run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/wlogout /home/$SUDO_
 run_command "yay -S --sudoloop --noconfirm grimblast" "Install Grimblast - Screenshot tool" "yes" "no"
 
 run_command "pacman -S --noconfirm neovim" "Install Neovim" "yes"
-run_command "ln -r /home/$SUDO_USER/simple-hyprland/configs/nvim /home/$SUDO_USER/.config/nvim" "Copy Neovim config" "yes" "no"
+run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/nvim /home/$SUDO_USER/.config/nvim" "Copy Neovim config" "yes" "no"
 echo "------------------------------------------------------------------------"
