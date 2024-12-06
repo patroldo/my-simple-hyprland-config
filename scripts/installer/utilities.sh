@@ -12,6 +12,8 @@ print_info "\nStarting utilities setup..."
 run_command "pacman -S --noconfirm waybar" "Install Waybar - Status Bar" "yes"
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/waybar /home/$SUDO_USER/.config/" "Link Waybar config" "yes" "no"
 
+run_command "mkdir /home/$SUDO_USER/.config/assets" "Creating directory for assets" "no" "no"
+
 run_command "pacman -S --noconfirm wofi" "Install Wofi - Application Launcher" "yes"
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/wofi /home/$SUDO_USER/.config/" "Link Tofi config(s)" "yes" "no"
 

@@ -21,7 +21,7 @@ run_command "pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd
 
 run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
 
-run_command "pacman -S --noconfirm chromium" "Install Chromium Browser" "yes" "no"
+run_command "pacman -S --noconfirm chromium" "Install Chromium Browser" "yes"
 
 run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
 
@@ -30,4 +30,3 @@ run_command "pacman -S --noconfirm vim" "Install vim" "yes"
 run_command "pacman -S --noconfirm tar" "Install tar for extracting files (Must)/needed for copying themes" "yes"
 
 echo "------------------------------------------------------------------------"
-

@@ -74,7 +74,7 @@ function run_command {
 
   local full_cmd=""
   if [[ "$use_sudo" == "yes" ]]; then
-    full_cmd="sudo -u $SUDO_USER $cmd"
+    full_cmd="sudo $cmd"
   else
     full_cmd="$cmd"
   fi
@@ -137,7 +137,7 @@ function check_root {
   # fi
 
   # Store the original user for later use
-  SUDO_USER=$(whoami)
+  export SUDO_USER=$(whoami)
   log_message "Original user is $SUDO_USER"
   print_success "Original user is $SUDO_USER"
 }
