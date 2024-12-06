@@ -1,3 +1,6 @@
+# Reference
+Original git repo - https://github.com/gaurav210233/simple-hyprland
+
 # Simple Hyprland 🌟 
 Welcome to the Simple Hyprland Guide! This repository is designed to help users set up a minimal Hyprland environment on Arch Linux. Although various scripts and configuration files are available elsewhere, they often result in bloated systems with many unused themes and configurations. This guide aims to provide a clear, concise, and minimal setup, allowing users to understand each step and customize their environment to their liking.
 
