@@ -16,6 +16,7 @@ run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/hypr /home/$SUDO_USE
 run_command "pacman -S --noconfirm xdg-desktop-portal-hyprland" "Install XDG desktop portal for Hyprland" "yes"
 
 run_command "pacman -S --noconfirm polkit-kde-agent" "Install KDE Polkit agent for authentication dialogs" "yes"
+run_command "pacman -S --noconfirm nautilus" "Install Nautilus(file manager)" "yes"
 
 run_command "pacman -S --noconfirm dunst libnotify" "Install Dunst notification daemon" "yes"
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/dunst /home/$SUDO_USER/.config/" "Copy dunst config" "yes" "no"

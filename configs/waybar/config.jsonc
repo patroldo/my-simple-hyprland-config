@@ -12,6 +12,7 @@
     ],
     "modules-center": ["hyprland/window"],
     "modules-right": [
+        "hyprland/language",
         "tray",
         "memory",
         "cpu",
@@ -29,7 +30,13 @@
     "hyprland/workspaces": {
         "disable-scroll": true,
         "all-outputs": true,
-        "on-click": "activate"
+        "on-click": "activate",
+        "persistent-workspaces": {
+          "1": [],
+          "2": [],
+          "3": [],
+          "4": [],
+        }
         //"format": "{icon}",
     },
 
@@ -142,5 +149,9 @@
         "tooltip-format-disconnected": "Disconnected",
         "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
         "interval": 2
+    },
+
+    "hyprland/language": {
+        "format": "{short}"
     }
 }
