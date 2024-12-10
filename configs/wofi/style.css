@@ -38,6 +38,10 @@ color: #f8f8f2;
 color: #282a36;
 }
 
+#entry {
+  padding: 5px;
+}
+
 #entry > * {
 color: #f8f8f2;
 }
