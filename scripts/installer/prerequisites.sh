@@ -30,4 +30,6 @@ run_command "pacman -S --noconfirm vim" "Install vim" "yes"
 
 run_command "pacman -S --noconfirm tar" "Install tar for extracting files (Must)/needed for copying themes" "yes"
 
+run_command "pacman -S --noconfirm sed" "Install sed(required)" "yes"
+
 echo "------------------------------------------------------------------------"
