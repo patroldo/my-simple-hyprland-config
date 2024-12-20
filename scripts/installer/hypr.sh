@@ -11,6 +11,8 @@ print_info "\nStarting hypr setup..."
 print_info "\nEverything is recommended to INSTALL"
 
 run_command "pacman -S --noconfirm hyprland" "Install Hyprland (Must)" "yes"
+run_command "yay -S --sudoloop --noconfirm uswm" "Install UWSM to start Hyprland (Must)" "no" "no"
+run_command "yay -S --sudoloop --noconfirm hyprland-utils" "Install hyprland utils(recommended by hyprland)" "no" "no"
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/hypr /home/$SUDO_USER/.config/" "Link Hyprland config" "yes" "no"
 
 run_command "pacman -S --noconfirm xdg-desktop-portal-hyprland" "Install XDG desktop portal for Hyprland" "yes"
