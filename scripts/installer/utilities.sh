@@ -14,8 +14,8 @@ run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/waybar /home/$SUDO_U
 
 run_command "mkdir /home/$SUDO_USER/.config/assets" "Creating directory for assets" "no" "no"
 
-run_command "pacman -S --noconfirm wofi" "Install Wofi - Application Launcher" "yes"
-run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/wofi /home/$SUDO_USER/.config/" "Link Tofi config(s)" "yes" "no"
+run_command "pacman -S --noconfirm fuzzel" "Install Fuzzel - Application Launcher" "yes"
+run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/fuzzel /home/$SUDO_USER/.config/" "Link Fuzzel config(s)" "yes" "no"
 
 run_command "pacman -S --noconfirm cliphist" "Install Cliphist - Clipboard Manager" "yes"
 

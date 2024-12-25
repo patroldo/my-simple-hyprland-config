@@ -23,8 +23,8 @@ run_command "pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd
 
 run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" "yes"
 
-run_command "pacman -S --noconfirm chromium" "Install Chromium Browser" "yes"
-run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/chromium/chromium-flag.conf /home/$SUDO_USER/.config/" "Link Chromium config file to use wayland by default" "no" "no"
+run_command "yay -S --sudoloop --noconfirm brave-bin" "Install Brave Browser" "yes" "no"
+run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/brave/brave-flags.conf /home/$SUDO_USER/.config/" "Link Chromium config file to use wayland by default" "no" "no"
 
 run_command "pacman -S --noconfirm kitty" "Install Kitty (Recommended)" "yes"
 
