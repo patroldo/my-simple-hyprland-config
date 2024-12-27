@@ -3,3 +3,4 @@
 -- Add any additional options here
 vim.g.lazyvim_python_lsp = "pyright"
 vim.opt.relativenumber = false
+vim.g.lazyvim_rust_diagnostics = "rust-analyzer"
