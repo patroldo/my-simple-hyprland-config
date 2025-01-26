@@ -31,10 +31,11 @@ run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/wlogout /home/$SUDO_
              ln -s /home/$SUDO_USER/simple-hyprland/assets/wlogout /home/$SUDO_USER/.config/assets/ && \
              rm -rf /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css && \
              cp /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css.tmpl /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css && \
-             sed -i \"s| _HOME_|$HOME|g\" /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css" "Copy Wlogout config and assets" "yes" "no"
+             sed -i "s|_HOME_|$HOME|g" /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css" "Copy Wlogout config and assets" "yes" "no"
 
 run_command "yay -S --sudoloop --noconfirm grimblast" "Install Grimblast - Screenshot tool" "yes" "no"
 
 run_command "pacman -S --noconfirm neovim" "Install Neovim" "yes"
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/nvim /home/$SUDO_USER/.config/nvim" "Copy Neovim config" "yes" "no"
+run_command "pacman -S --noconfirm brightnessctl" "Install brightnessctl to control display brightness via hotkey" "yes"
 echo "------------------------------------------------------------------------"

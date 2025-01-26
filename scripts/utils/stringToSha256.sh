@@ -1,4 +1,4 @@
-#/usr/bin/bash
+#!/usr/bin/bash
 
 # Prompt user for input securely
 echo "Enter the text to hash: "
