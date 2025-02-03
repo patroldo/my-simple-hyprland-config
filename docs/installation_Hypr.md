@@ -10,14 +10,19 @@ With the prerequisite base system established, we proceed to the core of this gu
 
     **Pro Tip:💡** If you're feeling adventurous, you can always grab the bleeding-edge version from the AUR for the latest features and fixes.
 
-2. **Initiate Hyprland:**
+2. Install uwsm. Previosly hyprland had 2 possibilities - run using systemd and using uwsm. But at some point systemd launching had been removed and uwsm is left. So it becomes crucial to install:
+```
+yay -S uwsm
+```
+
+3. **Initiate Hyprland:**
     As we installed SDDM before, you can also start the session through it.
 
     ```
     Hyprland
     ```
 
-3. **Upon initial launch:** A top bar will display with a warning and commands to launch Kitty and exit Hyprland.
+4. **Upon initial launch:** A top bar will display with a warning and commands to launch Kitty and exit Hyprland.
 To remove the warning ⚠️:
 
     * Launch Kitty using the shortcut **`(SUPER + Q)`** 
@@ -67,7 +72,10 @@ To access web resources, open Kitty and execute `brave-browser` to launch the Br
         ```
         exec-once=/usr/bin/dunst
         ```
-
+Additionally need to install service which will display notifications. For this libnotify shall be installed:
+```
+pacman -S --noconfirm libnotify
+```
 ## Hyprland Session Reload 🔄
 After installing the critical software components and making the necessary configurations, restart your Hyprland session to ensure all new settings and software are properly initialized and integrated.
 

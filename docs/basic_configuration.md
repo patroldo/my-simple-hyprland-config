@@ -15,7 +15,7 @@ Define frequently used applications for rapid access:
 $terminal = kitty
 $fileManager = dolphin
 $browser = brave-browser
-$editor = code
+$editor = nvim
 ```
 
 #### 3. Autostart Configuration 🚀

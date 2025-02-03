@@ -25,6 +25,7 @@ run_script "prerequisites.sh" "Prerequisites Setup"
 run_script "hypr.sh" "Hyprland & Critical Softwares Setup"
 run_script "utilities.sh" "Basic Utilities & Configs Setup"
 run_script "theming.sh" "Themes and Tools Setup"
+run_script "bluetooth.sh" "Bluetooth utils"
 run_script "final.sh" "Final Setup"
 
 print_bold_blue "\n🌟 Setup Complete\n"

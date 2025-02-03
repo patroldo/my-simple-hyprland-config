@@ -1,5 +1,15 @@
-# Reference
-Original git repo - https://github.com/gaurav210233/simple-hyprland
+# About
+The whole setup was based on this hyprland config - https://github.com/gaurav210233/simple-hyprland
+
+The idea was to provide as simple as possible hyprland config with as fewer tools as possible. Still it should be as pretty as possible and provide basic decent functionality. It covers all of my use-cases quite good and as i'm using it on daily basis(laptop and desktop) - so most probably going to keep it updated. 
+
+# Background gifs
+
+Gif animations may be downloaded from Here
+
+https://www.nodeseek.com/post-244674-| 
+
+Thank you Lian for such awesome work :)
 
 # Simple Hyprland 🌟 
 Welcome to the Simple Hyprland Guide! This repository is designed to help users set up a minimal Hyprland environment on Arch Linux. Although various scripts and configuration files are available elsewhere, they often result in bloated systems with many unused themes and configurations. This guide aims to provide a clear, concise, and minimal setup, allowing users to understand each step and customize their environment to their liking.
@@ -7,10 +17,6 @@ Welcome to the Simple Hyprland Guide! This repository is designed to help users 
 By the end of this guide, you'll have a clean and functional Hyprland setup like this:
 
 <img src="/assets/github_repo/images/final-setup-01.png" alt="final-setup-01">
-<img src="/assets/github_repo/images/final-setup-02.png" alt="final-setup-02">
-
-##### Setup Walkthrough 👇 (Click to Play)
-[![Showcase Video](https://raw.githubusercontent.com/gaurav210233/simple-hyprland/main/assets/github_repo/images/Simple_hypr_thumbnail.png)](https://www.youtube.com/watch?v=eNJorbKz_-U)
 
 ## Purpose ✨
 This guide is intended for:

@@ -11,10 +11,10 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
     pacman -S --needed git base-devel && git clone https://aur.archlinux.org/yay.git && cd yay && makepkg -si # builds with makepkg
     ```
 
-2. **Audio Stack:** Install and configure [Pipewire](https://wiki.archlinux.org/title/PipeWire) and [Wireplumber](https://wiki.archlinux.org/title/WirePlumber) for audio management. This modern audio setup will replace traditional systems like PulseAudio, providing better performance and flexibility.
+2. **Audio Stack:** Install and configure [Pipewire](https://wiki.archlinux.org/title/PipeWire) and [Wireplumber](https://wiki.archlinux.org/title/WirePlumber) for audio management. This modern audio setup will replace traditional systems like PulseAudio, providing better performance and flexibility. But there're still application which using alsa or pulse. And for this installing extenstion.
 
     ```
-    pacman -S pipewire wireplumber
+    pacman -S --noconfirm pipewire pipewire-pulse pipewire-alsa wireplumber
     ```
 
 3. **Nerd Fonts:** Install these Nerd Fonts for enhanced glyph support and aesthetics:
@@ -29,7 +29,7 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
     pacman -S ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono
     ```
 
-4. **Display Manager:** [SDDM](https://wiki.archlinux.org/title/SDDM) is the recommended display manager due to its high compatibility with Hyprland. However, feel free to use your preferred display manager, understanding that some configuration adjustments may be necessary. 
+4. **Display Manager:** [SDDM](https://wiki.archlinux.org/title/SDDM) is the recommended display manager due to its high compatibility with Hyprland. However, feel free to use your preferred display manager, understanding that some configuration adjustments may be necessary.
 
     ```
     pacman -S sddm
@@ -41,6 +41,11 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
     ```
     yay -S brave-bin
     ```
+Also adding some default configuration for brave. In the script it outlined by next command
+```
+
+ln -s /home/$SUDO_USER/simple-hyprland/configs/brave/brave-flags.conf /home/$SUDO_USER/.config/" "Link Chromium config file to use wayland by default"
+```
 
 6. **Terminal Emulator:** [Kitty](https://wiki.archlinux.org/title/Kitty) is the default terminal in the Hyprland configuration. If you prefer an alternative, be prepared to modify the config accordingly.
 
@@ -48,7 +53,7 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
     pacman -S kitty
     ```
 
-7. **Text/Code Editor:** Any text editor or IDE will suffice. This guide will use Visual Studio Code and nano for ease of demonstration, but feel free to use your editor of choice (vim, emacs, etc.).
+7. **Text/Code Editor:** Any text editor or IDE will suffice. This guide will use vim and later nvim, but ofc. can be changed to any. 
 
     ```
     yay -S visual-studio-code-bin
@@ -59,6 +64,12 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
 
     ```
     pacman -S tar
+    ```
+
+9. **sed:** Sed is useful command in order to replace some part of text in files without text-editor. It's going to be used by one of the commands out there
+
+    ```
+    pacman -S sed
     ```
 
 ## Assumed Competencies 🧠
