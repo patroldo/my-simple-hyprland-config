@@ -1,10 +1,18 @@
 #!/bin/bash
 
 # Get the directory of the current script
-SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 
 # Source helper file
 source $SCRIPT_DIR/helper.sh
+
+sudo systemctl enable systemd-resolved.service
+sudo systemctl start systemd-resolved.service
+sudo systemctl enable systemd-homed.service
+sudo systemctl start systemd-homed.service
+
+run_command "systemctl enable systemd-resolved.service" "Enable systemd resolver" "yes"
+run_command "systemctl enable systemd-homed.service" "Enable systemd homed" "yes"
 
 log_message "Final setup script started"
 print_bold_blue "\nCongratulations! Your Simple Hyprland setup is complete!"
@@ -24,3 +32,4 @@ echo "   - Don't hesitate to open a new issue if you can't find a solution to yo
 print_success "\nEnjoy your new Hyprland environment!"
 
 echo "------------------------------------------------------------------------"
+
