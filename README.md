@@ -47,11 +47,15 @@ While this guide is created with [Arch Linux](https://archlinux.org/) in mind, i
     ```
     git clone https://github.com/gaurav210233/simple-hyprland.git ~/simple-hyprland
     ```
-2. Navigate to the installer directory:
+2. Copy specific hypland config file
+```
+cp ~/simple-hyprland/configs/hypr/hyprland-user.conf.tmpl ~/simple-hyprland/configs/hypr/hyprland-user.conf
+```
+3. Navigate to the installer directory:
     ```
     cd ~/simple-hyprland/scripts/installer
     ```
-3. Run the installation script with sudo:
+4. Run the installation script with sudo:
     ```
     sudo sh install.sh
     ```
