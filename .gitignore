@@ -8,3 +8,4 @@ foo.*
 data
 configs/wlogout/style.css
 simple_hyprland_install.log
+scripts/installer/yay/
