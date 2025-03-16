@@ -126,3 +126,14 @@ Many configuration parts, themes, and scripts in this guide are sourced from the
 * [Hyprland-titus Repo](https://github.com/ChrisTitusTech/hyprland-titus) and more.
 
 Feel free to explore the documentation and contribute to this guide if you find any improvements or have suggestions. 🤝
+
+## Recommendations:
+
+There're 4 files for hyprland configurations:
+- hyprland.conf - this is main file which hyprlands is using as configuration. Recommendatino do not do anything with it
+- hyprland-default.conf - this is default configuration which you want to apply to any device where you deploy configuration from this repo. Change if you want to change something on any device. E.g. change default browser or change keybinding
+- hyprland-user.conf - this is device/user specific configuration which applied after default one. Use it in order to override some configurations which you want to have only on this device. E.g. cursor speed. This file is ignored by git. Potentially possible to use git-submodules here
+- hyprland-user.conf.tmpl - this is template for hyprland-user.conf file. Used by script or during manual installation as one which can be copied to hyprland-user.conf. In case if user-confugration becomes huge for some reason - makes sense to update this template file
+
+
+

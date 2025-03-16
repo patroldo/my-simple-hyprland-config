@@ -14,6 +14,7 @@ run_command "pacman -S --noconfirm hyprland" "Install Hyprland (Must)" "yes"
 run_command "yay -S --sudoloop --noconfirm uwsm" "Install UWSM to start Hyprland (Must)" "no" "no"
 run_command "yay -S --sudoloop --noconfirm hyprland-qtutils --overwrite '*'" "Install hyprland utils(recommended by hyprland)" "no" "no"
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/hypr /home/$SUDO_USER/.config/" "Link Hyprland config" "yes" "no"
+run_command "cp /home/$SUDO_USER/simple-hyprland/configs/hypr/hyprland-user.conf.tmpl /home/$SUDO_USER/simple-hyprland/configs/hypr/hyprland-user.conf" "Create user-specifc hyprland config" "yes" "no"
 
 run_command "pacman -S --noconfirm xdg-desktop-portal-hyprland" "Install XDG desktop portal for Hyprland" "yes"
 
