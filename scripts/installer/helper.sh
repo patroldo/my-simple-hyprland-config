@@ -116,26 +116,39 @@ function run_command {
 function run_script {
   local script="$SCRIPT_DIR/$1"
   local description="$2"
-  if ask_confirmation "\nExecute '$description' script"; then
-    while ! bash "$script"; do
-      print_error "$description script failed."
-      if ! ask_confirmation "Retry $description"; then
+  local isFastInstall="${3:-false}" # Default to "false" if not provided
+  if [[ "$isFastInstall" == "true" ]]; then
+    run_script_without_confirmation $script $description
+  else
+    run_script_with_confirmation $script $description
+  fi
+}
+
+function run_script_with_confirmation {
+  if ask_confirmation "\nExecute '$2' script"; then
+    while ! bash "$1"; do
+      print_error "$2 script failed."
+      if ! ask_confirmation "Retry $2"; then
         return 1 # User chose not to retry
       fi
     done
-    print_success "\n$description completed successfully."
+    print_success "\n$2 completed successfully."
   else
     return 1 # User chose not to run the script
   fi
 }
 
-function check_root {
-  # if [ "$EUID" -ne 0 ]; then
-  #   print_error "Please run as root"
-  #   log_message "Script not run as root. Exiting."
-  #   exit 1
-  # fi
+function run_script_without_confirmation {
+  while ! bash "$1" --fast; do
+    print_error "$2 script failed."
+    if ! ask_confirmation "Retry $2"; then
+      return 1 # User chose not to retry
+    fi
+  done
+  print_success "\n$2 completed successfully."
+}
 
+function check_root {
   # Store the original user for later use
   export SUDO_USER=$(whoami)
   log_message "Original user is $SUDO_USER"
