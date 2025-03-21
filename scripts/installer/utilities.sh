@@ -36,7 +36,7 @@ run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/wlogout /home/$SUDO_
              ln -s /home/$SUDO_USER/simple-hyprland/assets/wlogout /home/$SUDO_USER/.config/assets/ && \
              rm -rf /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css && \
              cp /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css.tmpl /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css && \
-             sed -i "s | _HOME_ | $HOME | g" /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css" "Copy Wlogout config and assets" $ASK_CONFIRM "no"
+             sed -i "s|_HOME_|$HOME|g" /home/$SUDO_USER/simple-hyprland/configs/wlogout/style.css" "Copy Wlogout config and assets" $ASK_CONFIRM "no"
 
 run_command "yay -S --sudoloop --noconfirm grimblast" "Install Grimblast - Screenshot tool" $ASK_CONFIRM "no"
 

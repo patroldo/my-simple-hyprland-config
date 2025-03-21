@@ -7,7 +7,7 @@ The idea was to provide as simple as possible hyprland config with as fewer tool
 
 Gif animations may be downloaded from Here
 
-https://www.nodeseek.com/post-244674-| 
+https://www.nodeseek.com/post-244674-1
 
 Thank you Lian for such awesome work :)
 
