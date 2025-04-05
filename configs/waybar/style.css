@@ -8,8 +8,9 @@
 }
 
 window#waybar {
-    background: rgba(21, 18, 27, 0);
+    background: rgba(255, 255, 255, 0.3);
     color: #cdd6f4;
+    border-radius: 0 0 10px 10px;
 }
 
 #workspaces button {
@@ -54,8 +55,6 @@ window#waybar {
     background: #1e1e2e;
     padding: 0px 10px;
     margin: 3px 0px;
-    margin-top: 5px;
-    /* border: 1px solid #181825; */
 }
 
 #backlight {
