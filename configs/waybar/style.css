@@ -76,7 +76,8 @@ window#waybar {
 }
 
 #language {
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 10px;
+    margin-left: 5px;
 }
 
 #cpu {
@@ -85,7 +86,7 @@ window#waybar {
 }
 
 #memory {
-    border-radius: 0;
+    border-radius: 10px 0px 0px 10px;
 }
 
 #window {
@@ -96,7 +97,7 @@ window#waybar {
 
 #clock {
     color: #a6adc8;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     margin-left: 5px;
     border-right: 0px;
 }
