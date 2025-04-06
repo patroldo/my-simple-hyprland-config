@@ -42,26 +42,26 @@ Autostart the bar with:
 exec-once=waybar
 ```
 
-## App Launcher: Tofi 🚀
-[Tofi](https://github.com/philj56/tofi) offers a minimalistic, Wayland-native application launcher for efficient application access.
+## App Launcher: Fuzzel 🚀
+[Fuzzel](https://codeberg.org/dnkl/fuzzel) offers a minimalistic, Wayland-native application launcher for efficient application access. And it provides possibility to launch application using "uwsm"
 
 <img src="/assets/github_repo/images/tofi-applauncher.png" alt="tofi-applauncher">
 
 ##### Installation
 
 ```
-yay -S tofi
+pacman -S fuzzel
 ```
 
 ##### Configuration
 Customize the appearance and behavior of the launcher by modifying the configuration file:
 
-`~/.config/tofi/` - The configuration directory.
+`~/.config/fuzzel/` - The configuration directory.
 
 You can copy my pre-configured files:
 
 ```
-cp -r ~/simple-hyprland/configs/tofi ~/.config/
+cp -r ~/simple-hyprland/configs/fuzzel ~/.config/
 ```
 
 ##### Hypr
@@ -74,7 +74,7 @@ bind = $mainMod, A, exec, $menu
 Define the launcher command and configuration path:
 
 ```
-$menu = tofi-drun -c ~/.config/tofi/configA --drun-launch=true
+$menu = fuzzel --launch-prefix='uwsm app --'
 ```
 
 ## Clipboard Manager:  Cliphist 📋

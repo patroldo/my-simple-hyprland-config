@@ -94,14 +94,11 @@ Configure keybindings for efficient workflow management. Note that these binding
 
 **Pro Tip:** 💡 Try to make meaningful binds like T for terminal, B for browser, C for code, F for file manager, and Q for quit.
 
-You might want to change the volume and brightness of your system. To do that, install the following software:
+You might want to change the brightness of your system. To do that, install the following software:
 
 ```
 # Brightness control
 pacman -S brightnessctl
-
-# Volume control
-pacman -S pamixer
 ```
 
 After installing the utilities, add the following bindings:
@@ -119,10 +116,10 @@ bind = $mainMod, W, togglefloating,
 
 
 # Volume and Media Control
-bind = , XF86AudioRaiseVolume, exec, pamixer -i 5 
-bind = , XF86AudioLowerVolume, exec, pamixer -d 5 
-bind = , XF86AudioMicMute, exec, pamixer --default-source -m
-bind = , XF86AudioMute, exec, pamixer -t
+bind = ,XF86AudioRaiseVolume, exec, wpctl set-volume -l 1 @DEFAULT_AUDIO_SINK@ 5%+
+bind = ,XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-
+bind = ,XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bind = ,XF86AudioMicMute, exec, wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle
 bind = , XF86AudioPlay, exec, playerctl play-pause
 bind = , XF86AudioPause, exec, playerctl play-pause
 bind = , XF86AudioNext, exec, playerctl next

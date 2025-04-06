@@ -1,5 +1,5 @@
 # About
-The whole setup was based on this hyprland config - https://github.com/gaurav210233/simple-hyprland
+The whole setup was based on this hyprland config - [Simple Hyprland](https://github.com/gaurav210233/simple-hyprland)
 
 The idea was to provide as simple as possible hyprland config with as fewer tools as possible. Still it should be as pretty as possible and provide basic decent functionality. It covers all of my use-cases quite good and as i'm using it on daily basis(laptop and desktop) - so most probably going to keep it updated. 
 
@@ -7,28 +7,19 @@ The idea was to provide as simple as possible hyprland config with as fewer tool
 
 Gif animations may be downloaded from Here
 
-https://www.nodeseek.com/post-244674-1
+[Lian artwork](https://www.nodeseek.com/post-244674-1)
 
 Thank you Lian for such awesome work :)
 
 # Simple Hyprland 🌟 
-Welcome to the Simple Hyprland Guide! This repository is designed to help users set up a minimal Hyprland environment on Arch Linux. Although various scripts and configuration files are available elsewhere, they often result in bloated systems with many unused themes and configurations. This guide aims to provide a clear, concise, and minimal setup, allowing users to understand each step and customize their environment to their liking.
+Welcome to the Simple Hyprland Guide(patroldo edition)! This repository is designed to help users set up a minimal Hyprland environment on Arch Linux. Although various scripts and configuration files are available elsewhere, they often result in bloated systems with many unused themes and configurations. This guide aims to provide a clear, concise, and minimal setup, allowing users to understand each step and customize their environment to their liking.
 
 By the end of this guide, you'll have a clean and functional Hyprland setup like this:
 
 <img src="/assets/github_repo/images/final-setup-01.png" alt="final-setup-01">
 
-## Purpose ✨
-This guide is intended for:
-
-**Newcomers transitioning to Hyprland who want to gain knowledge.** 👋 If you're new to Hyprland and looking to understand the ins and outs of setting it up, this guide will take you through the process step-by-step, explaining each component along the way.
-
-**Users who wish to set up a minimal system their way, knowing what's happening at each step.**  🧠 Rather than relying on scripts that automate the process, this guide empowers you to build your Hyprland environment from the ground up, enabling you to customize and tweak every aspect according to your preferences.
-
-**Individuals looking to save time by following a structured and efficient setup process.** ⏱️ While many guides and resources are available, they can be scattered and overwhelming. This guide consolidates the essential steps into a streamlined workflow, helping you get up and running with Hyprland quickly and efficiently.
-
 ## Getting Started 🚀
-If you're new to this guide, you can start from the [Prerequisites section](docs/prerequisites.md). This document outlines the necessary tools, packages, and assumptions required for a smooth installation and setup process.
+You can start from the [Prerequisites section](docs/prerequisites.md). This document outlines the necessary tools, packages, and assumptions required for a smooth installation and setup process.
 
 ## Documentation 📚
 1. [Prerequisites](docs/prerequisites.md)
@@ -45,11 +36,11 @@ While this guide is created with [Arch Linux](https://archlinux.org/) in mind, i
 
 1. Clone the repository to your home folder:
     ```
-    git clone https://github.com/gaurav210233/simple-hyprland.git ~/simple-hyprland
+    git clone https://github.com/patroldo/my-simple-hyprland-config.git ~/simple-hyprland
     ```
 2. Copy specific hypland config file
 ```
-cp ~/simple-hyprland/configs/hypr/hyprland-user.conf.tmpl ~/simple-hyprland/configs/hypr/hyprland-user.conf
+    cp ~/simple-hyprland/configs/hypr/hyprland-user.conf.tmpl ~/simple-hyprland/configs/hypr/hyprland-user.conf
 ```
 3. Navigate to the installer directory:
     ```
@@ -57,14 +48,15 @@ cp ~/simple-hyprland/configs/hypr/hyprland-user.conf.tmpl ~/simple-hyprland/conf
     ```
 4. Run the installation script with sudo:
     ```
-    sudo sh install.sh
+    sh install.sh
     ```
 #### Important Notes:
 
 - This script is user-centric and allows you to choose which components to install (Everything is asked, even for the core e`).
 - While the script offers flexibility, it is recommend to installing all components for the best experience, as this is already a minimal setup.
 - The installation process follows the same flow as the documentation, ensuring a structured and educational approach.
-- Although designed for Arch Linux, users of Arch-based distributions may also find this script helpful.
+- Although designed for Arch Linux, users of Arch-based distributions may also find this script helpful..
+- The script provide "--fast" installation option in order to not ask confirmation for every step, but install everything what it is offering. It was tested on clean hyprland configuration.
 
 > **Note for Newcomers**: Although this script enables rapid setup, it's highly recommended to read through the documentation for those new to Hyprland. Understanding each step will greatly enhance your ability to customize and troubleshoot your environment.
 
@@ -81,7 +73,7 @@ After installation, you'll want to familiarize yourself with the default key bin
 - `Super + S`: Open the alternative editor (`$editor-alt`).
 - `Super + F`: Open the file manager (`$fileManager`).
 - `Super + A`: Open the application menu (`$menu`).
-- `Super + M`: Exit Hyprland.
+- `Super + F1`: Toggle game mode. For details check ```gamemode.sh```). In short - removing some effects to slight remove load from gpu
 
 #### Window Management & Workspace Navigation
 - `Super + Q`: Close the active window.
@@ -92,6 +84,8 @@ After installation, you'll want to familiarize yourself with the default key bin
 - `SUPER + CTRL + [Arrow Keys]`: Resize active window
 - `SUPER + [1-9]`: Switch to workspace 1-9
 - `SUPER + SHIFT + [1-9]`: Move active window to workspace 1-9
+- `Super + M`: Full screen applications(waybar is visible)
+- `Super + Shift+ M`: Full screen applications(absolute full screen)
 
 #### Screen Brightness, Volume and Media Control
 - `Brightness Up`: Increase the screen brightness by 5%.
@@ -131,7 +125,7 @@ Feel free to explore the documentation and contribute to this guide if you find 
 
 There're 4 files for hyprland configurations:
 - hyprland.conf - this is main file which hyprlands is using as configuration. Recommendatino do not do anything with it
-- hyprland-default.conf - this is default configuration which you want to apply to any device where you deploy configuration from this repo. Change if you want to change something on any device. E.g. change default browser or change keybinding
+- hyprland-default.conf - this is default configuration which you want to apply to any device where you deploy configuration from this repo. Change if you want to change something on any device. E.g. change default browser or change keybinding on all devices using this configuration
 - hyprland-user.conf - this is device/user specific configuration which applied after default one. Use it in order to override some configurations which you want to have only on this device. E.g. cursor speed. This file is ignored by git. Potentially possible to use git-submodules here
 - hyprland-user.conf.tmpl - this is template for hyprland-user.conf file. Used by script or during manual installation as one which can be copied to hyprland-user.conf. In case if user-confugration becomes huge for some reason - makes sense to update this template file
 

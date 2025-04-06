@@ -44,7 +44,7 @@ This guide assumes understanding of Linux systems, particularly [Arch Linux](htt
 Also adding some default configuration for brave. In the script it outlined by next command
 ```
 
-ln -s /home/$SUDO_USER/simple-hyprland/configs/brave/brave-flags.conf /home/$SUDO_USER/.config/" "Link Chromium config file to use wayland by default"
+ln -s /home/$SUDO_USER/simple-hyprland/configs/brave/brave-flags.conf /home/$SUDO_USER/.config/"
 ```
 
 6. **Terminal Emulator:** [Kitty](https://wiki.archlinux.org/title/Kitty) is the default terminal in the Hyprland configuration. If you prefer an alternative, be prepared to modify the config accordingly.
@@ -56,8 +56,7 @@ ln -s /home/$SUDO_USER/simple-hyprland/configs/brave/brave-flags.conf /home/$SUD
 7. **Text/Code Editor:** Any text editor or IDE will suffice. This guide will use vim and later nvim, but ofc. can be changed to any. 
 
     ```
-    yay -S visual-studio-code-bin
-    pacman -S nano
+    pacman -S nano vim
     ```
 
 8. **tar:** The [tar](https://www.baeldung.com/linux/tar-command) command is a utility for archiving and extracting files. It will be essential for managing various archives throughout the installation process.
