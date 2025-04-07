@@ -50,7 +50,8 @@
     },
 
     "clock": {
-        "format": "{:%A   %I:%M:%S %p}",
+        // "format": "{:%a %d-%m-%Y <span color='#89b4fa'> </span> %I:%M:%S %p}",
+        "format": "<span color='#89b4fa'>󰥔 </span><span>{:%H:%M | %a %d %b}</span>",
         "interval": 1,
         "rotate": 0,
         "tooltip-format": "<span size='16pt'><big>{:%d %B}</big>\n<tt><small>{calendar}</small></tt></span>",
@@ -99,9 +100,10 @@
     },
 
     "pulseaudio": {
-        "format": "{icon}  {volume}%",
+        "format": "<span color='#a6e3a1'>{icon} </span><span color='#cdd6f4'>{volume}%</span>",
+        "format-bluetooth": "<span color='#a6e3a1'>{icon}</span>  <span color='#cdd6f4'>{volume}%</span>",
         "tooltip": false,
-        "format-muted": "  Muted",
+        "format-muted": "<span color='#f38ba8'> </span>",
         "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
         "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 1%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_SINK@ 1%-",
@@ -119,8 +121,8 @@
 
     "pulseaudio#microphone": {
         "format": "{format_source}",
-        "format-source": " {volume}%",
-        "format-source-muted": "  Muted",
+        "format-source": "<span color='#f38ba8'> </span><span color='#cdd6f4'>{volume}%</span>",
+        "format-source-muted": "<span color='#ffaa00'>  </span>",
         "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
         "on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 1%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_SOURCE@ 1%-",
@@ -134,11 +136,11 @@
             "m": 30 // medium
         },
         "interval": 10,
-        "format": "󰾆 {used}GB",
-        "format-m": "󰾅 {used}GB",
-        "format-h": "󰓅 {used}GB",
-        "format-c": " {used}GB",
-        "format-alt": "󰾆 {percentage}%",
+        "format": "<span color='#f38ba8'>󰾆 </span>{used}GB",
+        "format-m": "<span color='#f38ba8'>󰾅 </span>{used}GB",
+        "format-h": "<span color='#f38ba8'>󰓅 </span>{used}GB",
+        "format-c": "<span color='#f38ba8'> </span>{used}GB",
+        "format-alt": "<span color='#f38ba8'>󰾆 </span>{percentage}%",
         "max-length": 10,
         "tooltip": true,
         "tooltip-format": "󰾆 {percentage}%\n {used:0.1f}GB/{total:0.1f}GB"
@@ -146,7 +148,7 @@
 
     "cpu": {
         "interval": 10,
-        "format": "󰍛 {usage}%",
+        "format": "<span color='#89b4fa'>󰍛 </span>{usage}%",
         "format-alt": "{icon0}{icon1}{icon2}{icon3}",
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
     },
@@ -164,6 +166,6 @@
     },
 
     "hyprland/language": {
-        "format": "{short}"
+        "format": "<span color='#f9e2af'>󰌌</span> <span color='#cdd6f4'>{short}</span>",
     }
 }
