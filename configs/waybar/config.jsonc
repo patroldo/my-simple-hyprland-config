@@ -18,7 +18,6 @@
         "cpu",
         "network",
         "battery",
-        "backlight",
         "pulseaudio",
         "pulseaudio#microphone"
     ],
@@ -100,8 +99,8 @@
     },
 
     "pulseaudio": {
-        "format": "<span color='#a6e3a1'>{icon} </span><span color='#cdd6f4'>{volume}%</span>",
-        "format-bluetooth": "<span color='#a6e3a1'>{icon}</span>  <span color='#cdd6f4'>{volume}%</span>",
+        "format": "<span color='#a6e3a1'>{icon} {volume}%</span>",
+        "format-bluetooth": "<span color='#a6e3a1'>{icon} {volume}%</span>",
         "tooltip": false,
         "format-muted": "<span color='#f38ba8'> </span>",
         "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
@@ -121,8 +120,8 @@
 
     "pulseaudio#microphone": {
         "format": "{format_source}",
-        "format-source": "<span color='#f38ba8'> </span><span color='#cdd6f4'>{volume}%</span>",
-        "format-source-muted": "<span color='#ffaa00'>  </span>",
+        "format-source": "<span color='#f38ba8'> {volume}%</span>",
+        "format-source-muted": "<span color='#ffaa00'> </span>",
         "on-click": "wpctl set-mute @DEFAULT_SOURCE@ toggle",
         "on-scroll-up": "wpctl set-volume @DEFAULT_SOURCE@ 1%+",
         "on-scroll-down": "wpctl set-volume @DEFAULT_SOURCE@ 1%-",
@@ -136,9 +135,9 @@
             "m": 30 // medium
         },
         "interval": 10,
-        "format": "<span color='#f38ba8'>󰾆 </span>{used}GB",
-        "format-m": "<span color='#f38ba8'>󰾅 </span>{used}GB",
-        "format-h": "<span color='#f38ba8'>󰓅 </span>{used}GB",
+        "format": "<span color='#f38ba8'>󰾆 {used}GB</span>",
+        "format-m": "<span color='#f38ba8'>󰾅 {used}GB</span>",
+        "format-h": "<span color='#f38ba8'>󰓅 {used}GB</span>",
         "format-c": "<span color='#f38ba8'> </span>{used}GB",
         "format-alt": "<span color='#f38ba8'>󰾆 </span>{percentage}%",
         "max-length": 10,
@@ -148,24 +147,25 @@
 
     "cpu": {
         "interval": 10,
-        "format": "<span color='#89b4fa'>󰍛 </span>{usage}%",
+        "format": "<span color='#89b4fa'>󰍛 {usage}%</span>",
         "format-alt": "{icon0}{icon1}{icon2}{icon3}",
         "format-icons": ["▁", "▂", "▃", "▄", "▅", "▆", "▇", "█"]
     },
 
     "network": {
         "tooltip": true,
-        "format-wifi": " ",
-        "format-ethernet": "󰈀 ",
+        "format-wifi": "<span foreground='#bbb6ff'>{icon}</span>",
+        "format-ethernet": "<span foreground='#bbb6ff'>󰈀 </span>",
         "tooltip-format": "Network: <big><b>{essid}</b></big>\nSignal strength: <b>{signaldBm}dBm ({signalStrength}%)</b>\nFrequency: <b>{frequency}MHz</b>\nInterface: <b>{ifname}</b>\nIP: <b>{ipaddr}/{cidr}</b>\nGateway: <b>{gwaddr}</b>\nNetmask: <b>{netmask}</b>",
         "format-linked": "󰈀 {ifname} (No IP)",
         "format-disconnected": "󰖪 ",
         "tooltip-format-disconnected": "Disconnected",
         "format-alt": "<span foreground='#99ffdd'> {bandwidthDownBytes}</span> <span foreground='#ffcc66'> {bandwidthUpBytes}</span>",
+        "format-icons": ["󰤯","󰤟", "󰤢", "󰤥", "󰤨"],
         "interval": 2
     },
 
     "hyprland/language": {
-        "format": "<span color='#f9e2af'>󰌌</span> <span color='#cdd6f4'>{short}</span>",
+        "format": "<span color='#f9e2af'>󰌌 {short}</span>",
     }
 }
