@@ -101,7 +101,6 @@
     "pulseaudio": {
         "format": "<span color='#a6e3a1'>{icon}  {volume}%</span>",
         "format-bluetooth": "<span color='#a6e3a1'>{icon} {volume}%</span>",
-        "tooltip": false,
         "format-muted": "<span color='#f38ba8'> </span>",
         "on-click": "wpctl set-mute @DEFAULT_SINK@ toggle",
         "on-scroll-up": "wpctl set-volume @DEFAULT_SINK@ 1%+",
