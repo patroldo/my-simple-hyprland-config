@@ -17,6 +17,7 @@ Welcome to the Simple Hyprland Guide(patroldo edition)! This repository is desig
 By the end of this guide, you'll have a clean and functional Hyprland setup like this:
 
 <img src="/assets/github_repo/images/final-setup-01.png" alt="final-setup-01">
+<img src="/assets/github_repo/images/hyprlock.png" alt="lockscreen">
 
 ## Getting Started 🚀
 You can start from the [Prerequisites section](docs/prerequisites.md). This document outlines the necessary tools, packages, and assumptions required for a smooth installation and setup process.

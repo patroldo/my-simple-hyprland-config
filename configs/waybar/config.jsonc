@@ -99,7 +99,7 @@
     },
 
     "pulseaudio": {
-        "format": "<span color='#a6e3a1'>{icon} {volume}%</span>",
+        "format": "<span color='#a6e3a1'>{icon}  {volume}%</span>",
         "format-bluetooth": "<span color='#a6e3a1'>{icon} {volume}%</span>",
         "tooltip": false,
         "format-muted": "<span color='#f38ba8'> </span>",
