@@ -19,6 +19,7 @@ run_command "pacman -S --noconfirm nwg-look" "Install nwg-look for GTK theme man
 run_command "pacman -S --noconfirm qt5ct qt6ct kvantum" "Install Qt5, Qt6 Settings, and Kvantum theme engines" $ASK_CONFIRM
 
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/themes/Catppuccin-Mocha.tar.xz -C /usr/share/themes/" "Install Catppuccin Mocha GTK theme" $ASK_CONFIRM
+run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/themes/adw-gtk3v6.0.tar.xz -C /usr/share/themes/" "Install Catppuccin Mocha GTK theme" $ASK_CONFIRM
 
 run_command "tar -xvf /home/$SUDO_USER/simple-hyprland/assets/icons/Tela-circle-dracula.tar.xz -C /usr/share/icons/" "Install Tela Circle Dracula icon theme" $ASK_CONFIRM
 
