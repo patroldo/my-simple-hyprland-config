@@ -26,7 +26,8 @@ run_command "systemctl enable --user pipewire.service && systemctl enable --user
 
 run_command "pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" $ASK_CONFIRM
 
-run_command "pacman -S --noconfirm sddm && systemctl enable sddm.service" "Install and enable SDDM (Recommended)" $ASK_CONFIRM
+run_command "pacman -S --noconfirm sddm" "Install (Recommended)" $ASK_CONFIRM
+run_command "systemctl enable sddm.service" "Enable SDDM (Recommended)" $ASK_CONFIRM
 
 run_command "yay -S --sudoloop --noconfirm brave-bin" "Install Brave Browser" $ASK_CONFIRM "no"
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/brave/brave-flags.conf /home/$SUDO_USER/.config/" "Link Brave config file to use wayland by default" $ASK_CONFIRM "no"
