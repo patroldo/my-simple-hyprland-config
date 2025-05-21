@@ -5,23 +5,22 @@
 @define-color buttonHover #cdd6f4;
 @define-color workspaceHighlightedBackground #a6e3a1;
 @define-color workspaceHighlightedText #11111b;
-@define-color mainBackground @crust;
+@define-color mainBackground #2e2e3e;
 /* @define-color mainBackground #1e1e2e; */
 
 
 * {
     border: none;
     border-radius: 0;
-    font-family: JetBrainsMono Nerd Font, monospace;
+    font-family: "Pixel Operator", "Terminus", monospace;
     font-weight: bold;
-    font-size: 15px;
+    font-size: 16px;
     min-height: 0;
 }
 
 window#waybar {
     background: rgba(255, 255, 255, 0.3);
     color: @textColorM;
-    border-radius: 0 0 10px 10px;
 }
 
 #workspaces button {
@@ -36,19 +35,16 @@ window#waybar {
 
 #workspaces button.focused {
     color: @textColorM;
-    border-radius: 10px;
 }
 
 #workspaces button.urgent {
     color: @workspaceHighlightedText;
     background: @workspaceHighlightedBackground;
-    border-radius: 10px;
 }
 
 #workspaces button:hover {
     background: @buttonHover;
     color: @workspaceHighlightedText; 
-    border-radius: 10px;
 }
 
 #window,
@@ -68,64 +64,53 @@ window#waybar {
 }
 
 #backlight {
-    border-radius: 10px 0px 0px 10px;
 }
 
 #tray {
-    border-radius: 10px;
     margin-right: 10px;
 }
 
 #workspaces {
     background: @mainBackground;
-    border-radius: 10px;
     margin-left: 10px;
     padding-right: 0px;
     padding-left: 5px;
 }
 
 #language {
-    border-radius: 10px;
     margin-left: 5px;
 }
 
 #cpu {
-    border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }
 
 #memory {
-    border-radius: 10px 0px 0px 10px;
 }
 
 #window {
-    border-radius: 10px;
     margin-left: 60px;
     margin-right: 60px;
 }
 
 #clock {
     color: @textColorM;
-    border-radius: 10px;
     margin-left: 5px;
     border-right: 0px;
 }
 
 #network {
     color: @textColorM;
-    border-radius: 10px 0px 0px 10px;
 }
 
 #pulseaudio {
     color: @textColorM;
-    border-radius: 10px 0 0 10px;
     border-left: 0px;
     border-right: 0px;
 }
 
 #pulseaudio.microphone {
     color: @textColorM;
-    border-radius: 0px 10px 10px 0px;
     border-left: 0px;
     border-right: 0px;
     margin-right: 5px;
@@ -133,6 +118,5 @@ window#waybar {
 
 #battery {
     color: @textColorM;
-    border-radius: 0px 10px 10px 0px;
     margin-right: 10px;
 }

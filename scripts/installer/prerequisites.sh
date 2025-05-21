@@ -24,7 +24,7 @@ run_command "pacman -S --noconfirm pipewire pipewire-pulse pipewire-alsa wireplu
 
 run_command "systemctl enable --user pipewire.service && systemctl enable --user pipewire-pulse.service" "Configuring audio (Recommended)" $ASK_CONFIRM "no"
 
-run_command "pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono" "Installing Nerd Fonts and Symbols (Recommended)" $ASK_CONFIRM
+run_command "pacman -S --noconfirm ttf-cascadia-code-nerd ttf-cascadia-mono-nerd ttf-fira-code ttf-fira-mono ttf-fira-sans ttf-firacode-nerd ttf-iosevka-nerd ttf-iosevkaterm-nerd ttf-jetbrains-mono-nerd ttf-jetbrains-mono ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols ttf-nerd-fonts-symbols-mono noto-fonts-emoji" "Installing Nerd Fonts and Symbols (Recommended)" $ASK_CONFIRM
 
 run_command "pacman -S --noconfirm sddm" "Install (Recommended)" $ASK_CONFIRM
 run_command "systemctl enable sddm.service" "Enable SDDM (Recommended)" $ASK_CONFIRM
