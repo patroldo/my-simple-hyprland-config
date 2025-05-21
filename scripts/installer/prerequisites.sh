@@ -40,4 +40,6 @@ run_command "pacman -S --noconfirm tar" "Install tar for extracting files (Must)
 
 run_command "pacman -S --noconfirm sed" "Install sed(required)" $ASK_CONFIRM
 
+run_command "pacman -S --noconfirm linux-headers" "Install linux headers(optional, useful in the future)" $ASK_CONFIRM
+
 echo "------------------------------------------------------------------------"
