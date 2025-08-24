@@ -43,4 +43,5 @@ run_command "yay -S --sudoloop --noconfirm grimblast" "Install Grimblast - Scree
 run_command "pacman -S --noconfirm neovim" "Install Neovim" $ASK_CONFIRM
 run_command "ln -s /home/$SUDO_USER/simple-hyprland/configs/nvim /home/$SUDO_USER/.config/nvim" "Copy Neovim config" $ASK_CONFIRM "no"
 run_command "pacman -S --noconfirm brightnessctl" "Install brightnessctl to control display brightness via hotkey" $ASK_CONFIRM
+run_command "pacman -S --noconfirm keychain" "Install keychain for ssh-agent, gpg-agent and private keys" $ASK_CONFIRM
 echo "------------------------------------------------------------------------"
