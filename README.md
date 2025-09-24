@@ -11,6 +11,9 @@ Gif animations may be downloaded from Here
 
 Thank you Lian for such awesome work :)
 
+Also some more gifs taken from here:
+[WallpaperAccess](https://wallpaperaccess.com/1920x1080-gif)
+
 # Simple Hyprland 🌟 
 Welcome to the Simple Hyprland Guide(patroldo edition)! This repository is designed to help users set up a minimal Hyprland environment on Arch Linux. Although various scripts and configuration files are available elsewhere, they often result in bloated systems with many unused themes and configurations. This guide aims to provide a clear, concise, and minimal setup, allowing users to understand each step and customize their environment to their liking.
 
