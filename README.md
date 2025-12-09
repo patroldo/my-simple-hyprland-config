@@ -54,6 +54,9 @@ While this guide is created with [Arch Linux](https://archlinux.org/) in mind, i
     ```
     sh install.sh
     ```
+
+5. Do post install steps:
+- update monitors in hyprland-user.conf 
 #### Important Notes:
 
 - This script is user-centric and allows you to choose which components to install (Everything is asked, even for the core e`).
