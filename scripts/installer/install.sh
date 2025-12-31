@@ -27,7 +27,7 @@ check_os
 
 # Run child scripts
 run_script "prerequisites.sh" "Prerequisites Setup" $FAST
-run_script "hypr.sh" "Hyprland & Critical Softwares Setup" $FAST
+run_script "niri.sh" "Niri & Critical Softwares Setup" $FAST
 run_script "utilities.sh" "Basic Utilities & Configs Setup" $FAST
 run_script "theming.sh" "Themes and Tools Setup" $FAST
 run_script "bluetooth.sh" "Bluetooth utils" $FAST
