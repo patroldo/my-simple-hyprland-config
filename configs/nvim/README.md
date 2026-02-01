@@ -1,16 +1,34 @@
-# 💤 LazyVim
+# AstroNvim Template
 
-A starter template for [LazyVim](https://github.com/LazyVim/LazyVim).
-Refer to the [documentation](https://lazyvim.github.io/installation) to get started.
+**NOTE:** This is for AstroNvim v5+
 
-Version: NVIM v0.11.0-dev-1228+g9e7b0bcf51
+A template for getting started with [AstroNvim](https://github.com/AstroNvim/AstroNvim)
 
-# Important
-Replace JAVA_HOME in init.lua
+## 🛠️ Installation
 
-# Fonts
+#### Make a backup of your current nvim and shared folder
 
-1) Downloads latest fonts from [fonts](https://www.nerdfonts.com/font-downloads)
-2) Unzip and copy to ~/.fonts
-3) Run the command ```fc-cache -fv to manually``` rebuild the font cache
+```shell
+mv ~/.config/nvim ~/.config/nvim.bak
+mv ~/.local/share/nvim ~/.local/share/nvim.bak
+mv ~/.local/state/nvim ~/.local/state/nvim.bak
+mv ~/.cache/nvim ~/.cache/nvim.bak
+```
 
+#### Create a new user repository from this template
+
+Press the "Use this template" button above to create a new repository to store your user configuration.
+
+You can also just clone this repository directly if you do not want to track your user configuration in GitHub.
+
+#### Clone the repository
+
+```shell
+git clone https://github.com/<your_user>/<your_repository> ~/.config/nvim
+```
+
+#### Start Neovim
+
+```shell
+nvim
+```
